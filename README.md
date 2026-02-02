@@ -1,61 +1,137 @@
-# 🚀 Getting started with Strapi
+Task 1 – Strapi Local Setup & Exploration
+📌 Overview
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+This repository contains Task 1 of the onboarding assignment.
+The goal of this task is to set up Strapi locally, explore its structure, access the Admin Panel, and create a sample content type.
 
-### `develop`
+🛠️ Tech Stack
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+Node.js (v20.x – v24.x)
 
-```
+npm
+
+Strapi (Headless CMS)
+
+Git & GitHub
+
+Linux (Hyprland / Arch Linux)
+
+📥 Task Requirements
+
+Clone the official Strapi repository
+
+Run Strapi locally
+
+Explore project folder structure
+
+Start the Admin Panel
+
+Create a sample content type
+
+Push setup to GitHub
+
+Document all steps in README.md
+
+Record a Loom video
+
+🔗 Official Strapi Repository
+
+👉 https://github.com/strapi/strapi
+
+⚙️ Local Setup Steps
+1️⃣ Clone the Strapi Repository
+git clone https://github.com/strapi/strapi.git
+
+2️⃣ Create Strapi Application
+npx create-strapi-app task1-app-strapi --quickstart
+cd task1-app-strapi
+
+
+⚠️ Important Note
+Strapi supports Node.js >=20.0.0 and <=24.x.x
+Make sure the correct Node version is installed before running the command.
+
+3️⃣ Start Strapi Development Server
 npm run develop
-# or
-yarn develop
-```
 
-### `start`
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+Strapi will start on:
 
-```
-npm run start
-# or
-yarn start
-```
+http://localhost:1337
 
-### `build`
+🔐 Admin Panel
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
+Access the admin panel using:
 
-```
-npm run build
-# or
-yarn build
-```
+http://localhost:1337/admin
 
-## ⚙️ Deployment
 
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
+Steps:
 
-```
-yarn strapi deploy
-```
+Create admin user
 
-## 📚 Learn more
+Login to the dashboard
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+Explore available features
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+🧱 Project Folder Structure
 
-## ✨ Community
+Main folders explored inside task1-app-strapi:
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+task1-app-strapi/
+├── config/        # Application configuration
+├── src/           # APIs, content-types, controllers
+├── database/      # Database files
+├── public/        # Public assets
+├── package.json   # Project dependencies
 
----
+🧩 Sample Content Type Creation
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+Steps followed:
+
+Open Admin Panel
+
+Navigate to Content-Type Builder
+
+Create a new Collection Type (Example: Article)
+
+Add fields:
+
+Title (Text)
+
+Description (Rich Text)
+
+Published Date (Date)
+
+Save and build
+
+✔ Sample content type created successfully
+
+📂 Git & GitHub Workflow
+Initialize Git Repository
+git init
+git add .
+git commit -m "Task-1: Strapi local setup and admin panel exploration"
+
+Push to GitHub
+git branch -M main
+git remote add origin https://github.com/<your-username>/<repository-name>.git
+git push -u origin main
+
+
+✅ Task Status
+
+Task 1 completed successfully ✅
+
+All required objectives were achieved:
+
+Strapi running locally
+
+Admin panel accessed
+
+Content type created
+
+Code pushed to GitHub
+
+Documentation completed
+
